@@ -54,30 +54,5 @@ body.dark .title-products p{
     justify-content: center;
 }
 
-@media only screen and (min-width: 750px){
-    .products-container{
-        width: 100%;
-        display: block;
-    }
 
-    .products{
-        align-items: center;
-        width: 750px;
-        margin-top: 150px;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .products_{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-    .product{
-        width: 200px;
-        width: auto;
-        margin-top: 50px;
-    }
-    
-}
 
