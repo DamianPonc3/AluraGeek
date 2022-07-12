@@ -70,7 +70,9 @@ body.dark .search-input{
         top: 2.8%;
         left: 92.8%;
     }
-
+    .section-products-title{
+        margin-top: 90px;
+    }
     .products{
         width: 100%;
         grid-template-columns: repeat(6, auto);
