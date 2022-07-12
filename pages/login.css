@@ -61,6 +61,10 @@ input::placeholder{
     border-radius: 2px;
 }
 
+.form-user button a{
+    text-decoration: none;
+}
+
 .form-user button p{
     margin: 0;
     font-family: Raleway;
