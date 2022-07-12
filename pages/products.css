@@ -1,58 +1,82 @@
 .search-input {
     height: 25px;
+    border-radius: 5px;
+    border: 1px solid #464646;
 }
 
-.search{
-    top: 3.1%;
-    left: 86%;
+.title-products {
+    font-size: 24px;
+    width: auto;
 }
 
-.products-container{
-    margin-left: 55px;
-}
-
-.title-products{
-    width: auto;    
-    margin-top: 30px;
-}
-
-.title-products p{
-    font-weight: 900;
-    font-size: 25px;
-    margin-bottom: 15px;
-    color: #000;
-}
-
-body.dark .title-products p{
-    color: #ffff;
-}
-
-.products-button{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 12px;
-    margin: 5px;
-    gap: 7px;
-    width: 125px;
-    height: 30px;
-    background-color: #2A7AE4;
-    font-family: Raleway;
-    font-weight: 800;
-    font-size: 14px;
-    line-height: 16px;
-    color: #ffffff;
-    border-radius: 2px;
+body.dark .search-input{
     border: none;
 }
 
-.products{
-    margin-top: 70px;
-    margin-bottom: 220px;
-    display: flex;
-    justify-content: center;
+.search{
+    top: 1.3%;
+    left: 86%;
 }
 
+.products{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
 
+.footer{
+    margin-top: 1900px;
+}
 
+@media only screen and (min-width: 750px){
+    body{
+        width: 750px;
+    }
+
+    .search{
+        top: 2.1%;
+        left: 87.5%;
+    }
+    .products-container{
+        display:inline-block;
+        justify-content: space-between;
+        width: 750px;
+    }
+
+    .section-products-title{
+        width: 750px;
+        margin-left: 10px;
+    }
+    
+
+    .products{
+        width: 750px;
+        grid-template-columns: repeat(4, auto);
+        margin-top: 100px;
+        left: 0;
+    }
+
+    .footer{
+        width: 100%;
+        margin-top: 950px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    body{
+        width: 100%;
+    }
+
+    .search{
+        top: 2.8%;
+        left: 92.8%;
+    }
+
+    .products{
+        width: 100%;
+        grid-template-columns: repeat(6, auto);
+    }
+
+    .footer{
+        margin-top: 500px ;
+    }
+}
